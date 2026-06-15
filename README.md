@@ -1,6 +1,6 @@
 # Exact simulation of time changed Wright-Fisher processes
 
-For subordinated Wright-Fisher processes, JaroSant's (GitHub) code is (here) extended to include choices of Laplace transform other than the identity. The article "Subordinated Wright-Fisher priors", available on ArXiv, proves that the associated sampling scheme is exact.
+For subordinated Wright-Fisher processes, JaroSant's (GitHub) code is (here) extended to include choices of Laplace transform other than the identity. The article "Subordinated Wright-Fisher priors", available on ArXiv (at https://arxiv.org/abs/2604.1136), proves that the associated sampling scheme is exact.
 
 For fractional Wright-Fisher processes, s~E(t) is first simulated according to FengLin2023's (GitHub) code for the simulation of first passage times of subordinators. "Simulate_Subordinator_Inverse.py" imports his code and runs an example, which is then plotted and the data of simulated times written to ".csv". The simulated times are then plugged into the EWF exact sampler from JaroSant's (GitHub) code, see "Simulate_WF.py".
 
