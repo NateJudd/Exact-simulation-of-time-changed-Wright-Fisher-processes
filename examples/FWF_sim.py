@@ -21,7 +21,7 @@ n_rows, n_cols = data.shape
 print(f"Loaded data with shape: {data.shape}")
 
 # ---------------------------------------------------------------------
-# 2. Define Wright–Fisher parameters
+# 2. Define Wrightâ€“Fisher parameters
 # ---------------------------------------------------------------------
 m1, m2 = 1, 1
 mutation_vector = np.array([m1, m2])
