@@ -4,8 +4,8 @@ For subordinated Wright-Fisher processes, JaroSant's (GitHub) code is (here) ext
 
 For fractional Wright-Fisher processes, s~E(t) is first simulated according to FengLin2023's (GitHub) code for the simulation of first passage times of subordinators. "Simulate_Subordinator_Inverse.py" imports his code and runs an example, which is then plotted and the data of simulated times written to ".csv". The simulated times are then plugged into the EWF exact sampler from JaroSant's scheme, see "Simulate_WF.py".
 
+ ## Repository Structure
 
-## Repository structure
 ```text
 .
 ├── README.md                     # Project documentation
