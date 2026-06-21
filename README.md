@@ -6,23 +6,22 @@ For fractional Wright-Fisher processes, s~E(t) is first simulated according to F
 
 
 ## Repository structure
-'''text
-
-├── README.md         # read me file
-├── LICENSE               # MIT licence
-├── CMakeLists.txt     # global parameters
+```text
+.
+├── README.md                     # Project documentation
+├── LICENSE                       # MIT license
+├── CMakeLists.txt                # Global build configuration
 └── src/
-    ├── CMakeLists.txt      # local (module) parameters
-    ├── EWF_pybind.cpp   # pybind c++
-    ├── WrightFisher.cpp   # sWF functions c++
-    ├── WrightFisher.h       # sWF functions c++
-└── examples/
-    ├── Simulate_Subordinator_Inverse.py # simulate subordinator inverse
-    ├── FWF_sim.py                                       # simulate sWF with inverse subordinator clock
-    ├── tf_sim.py                                            # simulate sWF with subordinator clock
-└── utils/
-    ├──  merge_plots.R                          # script to combine multiple plots into a single panel
-    ├──  plot_fwf.py                                # script to plot the sWF with subordinator inverse clock
-    ├──  print_overlapping_tf_dens.py # script to combine multiple density curves onto a single plot
-
-'''
+    ├── CMakeLists.txt            # Module-specific build configuration
+    ├── EWF_pybind.cpp            # Pybind11 interface
+    ├── WrightFisher.cpp          # Wright-Fisher implementation
+    ├── WrightFisher.h            # Wright-Fisher declarations
+    ├── examples/
+    │   ├── Simulate_Subordinator_Inverse.py  # Simulate inverse subordinator
+    │   ├── FWF_sim.py                       # Simulate subordinated Wright-Fisher process
+    │   └── tf_sim.py                        # Simulate Wright-Fisher process with subordinator clock
+    └── utils/
+        ├── merge_plots.R                    # Combine multiple plots into a single panel
+        ├── plot_fwf.py                      # Plot subordinated Wright-Fisher trajectories
+        └── print_overlapping_tf_dens.py     # Overlay multiple density curves
+```
