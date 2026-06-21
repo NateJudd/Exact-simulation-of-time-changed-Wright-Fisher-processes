@@ -14,12 +14,10 @@ For fractional Wright-Fisher processes, s~E(t) is first simulated according to F
     ├── EWF_pybind.cpp   # pybind c++
     ├── WrightFisher.cpp   # sWF functions c++
     ├── WrightFisher.h       # sWF functions c++
-
 └── examples/
     ├── Simulate_Subordinator_Inverse.py # simulate subordinator inverse
     ├── FWF_sim.py                                       # simulate sWF with inverse subordinator clock
     ├── tf_sim.py                                            # simulate sWF with subordinator clock
-    
 └── utils/
     ├──  merge_plots.R                          # script to combine multiple plots into a single panel
     ├──  plot_fwf.py                                # script to plot the sWF with subordinator inverse clock
